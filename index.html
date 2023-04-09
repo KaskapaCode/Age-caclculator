@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="compPlace">
+            <section class="input">
+                <div class="text">
+                    <p class="DAY">DAY</p>
+                    <input type="text" class="day" maxlength="2" onkeypress="return isNumber(event)" placeholder="DD" required />
+                </div>
+                <div class="text">
+                    <p>MONTH</p>
+                    <input type="text" class="month" maxlength="2" onkeypress="return isNumber(event)" placeholder="MM" required />
+                </div>
+                <div class="text">
+                    <p>YEAR</p>
+                    <input type="text" class="year" maxlength="4" onkeypress="return isNumber(event)" placeholder="YYYY" required />
+                </div>
+            </section>
+            <section class="button">
+                <hr>
+                <button><svg width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+            </section>
+            <section class="end">
+                <div class="text">
+                    <p class="digits" id="digYear">--</p>
+                    <p>years</p>
+                </div>
+                <div class="text">
+                    <p class="digits" id="digMonth">--</p>
+                    <p>months</p>
+                </div>
+                <div class="text">
+                    <p class="digits" id="digDay">--</p>
+                    <p>days</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
